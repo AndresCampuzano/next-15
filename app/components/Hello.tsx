@@ -1,15 +1,17 @@
 'use client';
 
 export function Hello() {
-    console.log("Client component");
+  console.log('Client component');
 
-    function testFoo() {
-        console.log("test foo");
-    }
+  function testFoo() {
+    console.log('test foo');
+  }
   return (
-      <>
-        <h2>Client component</h2>
-        <button onClick={testFoo} className="
+    <>
+      <h2>Client component</h2>
+      <button
+        onClick={testFoo}
+        className="
             bg-blue-500
             hover:bg-blue-700
             active:scale-95
@@ -20,9 +22,9 @@ export function Hello() {
             px-4
             rounded
         "
-        >
-            test foo
-        </button>
-      </>
+      >
+        test foo
+      </button>
+    </>
   );
 }

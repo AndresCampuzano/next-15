@@ -1,11 +1,11 @@
-import books from "@/app/api/db"
+import books from '@/app/api/db';
 
 export async function GET() {
-    return Response.json(books)
+  return Response.json(books);
 }
 
 export async function POST(request: Request) {
-    const newBook = await request.json()
-    books.push(newBook)
-    return Response.json(newBook)
+  const newBook = await request.json();
+  books.push(newBook);
+  return Response.json(newBook);
 }
